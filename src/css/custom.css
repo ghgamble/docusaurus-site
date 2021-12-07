@@ -1,0 +1,132 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #fff;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-heading-color: #000;
+  --ifm-font-color-base-inverse: #000;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar, main menu */
+.navbar__logo {
+    height: 3rem;
+}
+.navbar__inner {
+  margin: 0 auto;
+  max-width: var(--ifm-container-width);
+  padding: 0 var(--ifm-spacing-horizontal);
+  width: 100%;
+}
+a.navbar__item.navbar__link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.navbar--fixed-top {
+  box-shadow: 0px 2px 34px rgba(0, 0, 0, 0.07);
+}
+
+/* Footer */
+
+footer.footer.footer--dark {
+  background-color: #000;
+}
+.col.footer__col:nth-child(2) .footer__items {
+  display: flex;
+  flex-direction: row-reverse;
+}
+div#bottom-section-footer {
+  display: flex;
+}
+div#bottom-section-footer p {
+  padding-left: 40px;
+}
+div#bottom-section-social a {
+  padding: 0 10px;
+}
+div#bottom-section-footer img {
+    max-width: 175px;
+    filter: invert(40%) sepia(23%) saturate(192%) hue-rotate(159deg) brightness(100%) contrast(88%);
+}
+div#bottom-section-social {
+  display: flex;
+}
+div#bottom-section-social img {
+  width: 22px;
+  filter: invert(60%) sepia(23%) saturate(192%) hue-rotate(159deg) brightness(100%) contrast(88%);
+}
+div#bottom-section-social a:first-child {
+  padding-left: 0;
+}
+div#bottom-section-social a:nth-child(3) {
+  padding-right: 0;
+}
+p.bottom-section-description {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A8BCC8;
+}
+p#footer-copyright {
+  padding-top: 5px;
+}
+.footer__links {
+  margin-bottom: 0;
+}
+
+/* Home Page links to doc sites */
+
+.col.col--3.document-site-section {
+  background: #fff;
+  margin: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.02);
+}
+.text--center.padding-horiz--md.text-section {
+  padding-bottom: 40px;
+}
+.text--center.img-section {
+  padding-top: 65px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar__inner {
+    max-width: var(--ifm-container-width-xl);
+  }
+}
+@media only screen and (max-width: 996px) {
+  .col.footer__col:nth-child(2) .footer__items {
+    display: flex;
+    flex-direction: row;
+  }
+  .col.footer__col {
+    margin-bottom: 0;
+  }
+}
